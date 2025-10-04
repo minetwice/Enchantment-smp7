@@ -1,0 +1,6 @@
+name: CustomEnchantments
+version: 1.0
+main: me.minetwice.customenchantments.CustomEnchantments
+api-version: 1.21
+author: minetwice
+description: 30 Custom Enchantments Plugin with unique abilities!
