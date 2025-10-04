@@ -1,8 +1,0 @@
-            - name: JAVA 7 And MAVEN Action
-  # You may pin to the exact commit or the version.
-  # uses: kingprimex/maven-java@5c27e613ef65c3cd9bd068b081533d04242ced65
-  uses: kingprimex/maven-java@v0.0.6
-  with:
-    # Command to run
-    command: 
-          
