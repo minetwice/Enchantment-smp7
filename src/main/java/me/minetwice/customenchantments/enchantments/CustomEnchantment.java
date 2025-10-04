@@ -7,5 +7,5 @@ public interface CustomEnchantment {
     String getName();
     String getDescription();
     void activate(Player player, PlayerInteractEvent event);
-    String getIconMaterial(); // For spinner GUI
+    String getIconMaterial(); // For spinner GUI and item appearance
 }
