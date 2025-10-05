@@ -24,7 +24,7 @@ jobs:
         run: mvn -B package --file pom.xml
 
       - name: Upload JAR artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # <-- v4 instead of v3!
         with:
           name: plugin-jar
           path: target/*.jar
