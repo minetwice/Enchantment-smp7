@@ -1,4 +1,4 @@
-name: Build Gradle Plugin
+name: Build Maven Plugin
 
 on:
   push:
@@ -20,14 +20,11 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-
-      - name: Build with Gradle
-        run: ./gradlew build
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
 
       - name: Upload JAR artifact
         uses: actions/upload-artifact@v4
         with:
           name: plugin-jar
-          path: build/libs/*.jar
+          path: target/*.jar
