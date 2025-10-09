@@ -1,16 +1,5 @@
-            - name: JAVA 8 And MAVEN Action
+            - name: Build with Gradle
   # You may pin to the exact commit or the version.
-  # uses: kobi-lemberg/github-maven-step@ec7d0e78128cf0f7b103a8b4f070d2d0643a4468
-  uses: kobi-lemberg/github-maven-step@java8_maven3.6
-  with:
-    # Command to run
-    command: 
-    # artifactory realese username variable name
-    artifactory-release-username-variable: 
-    # artifactory realese username variable value
-    artifactory-release-username-value: 
-    # artifactory realese password variable name
-    artifactory-snapshots-password-variable: 
-    # path to maven settings file
-    path-to-settings: # optional
+  # uses: gradle/actions@4d9f0ba0025fe599b4ebab900eb7f3a1d93ef4c2
+  uses: gradle/actions@v5.0.0
           
